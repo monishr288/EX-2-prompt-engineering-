@@ -5,105 +5,117 @@ Test and compare how different pattern models respond to various prompts (broad 
      Analyze the quality, accuracy, and depth of the generated responses.
 
 # OUTPUT
-### Purpose:
-To test and compare how two large language models — ChatGPT and Gemini — respond to different prompting patterns, specifically examining their behavior when given broad (unstructured) versus refined (clear) prompts, across different prompt styles.
-### Prompt Type 1: Intuition Behind Prompts
-### Prompt A (Broad):
-"Tell me something interesting."
-### ChatGPT:
-Two hearts pump blood to the gills, one to the body—and they stop the body-pumping heart when they swim.
-### Gemini:
-Bees make honey, and its low water content and acidity prevent bacteria from thriving, allowing it to last indefinitely if stored properly.
-### Prompt B (Refined):
-"Explain the intuition behind how prompts work in AI language models with two simple examples."
-### ChatGPT:
-Prompts guide the AI on what to say by giving it context.
-### Example 1:
-Prompt: “Translate to French: Good morning”
-→ AI sees “Translate” and gives “Bonjour” — it's following the instruction.
-### Example 2:
-Prompt: “Once upon a time,”
-→ AI continues with a story — it sees this as a storytelling cue.
-Prompts shape the AI’s response style and content.
-### Gemini:
-AI language models predict the next words. Prompts provide context to guide this prediction.
-### Example 1: 
-Prompt: "The sky is..." Intuition: The model predicts words commonly following "The sky is," like "blue" or "cloudy."
-### Example 2: 
-Prompt: "Translate 'hello' to French." Intuition: The model recognizes the translation task and predicts "bonjour."
+Programming Challenge:
+"Design an application that monitors CPU and RAM usage in real-time and provides alerts when resource usage exceeds a defined threshold."
 
-### Prompt Type 2: Straightforward Prompts
-### Prompt A (Broad):
-"Rain."
-### ChatGPT:
-Rain forms when moist air cools, condenses into droplets, and falls from clouds due to gravity
-### Gemini:
-Water falling from clouds.
-### Prompt B (Refined):
-"Explain what causes rainfall in 1-2 sentences."
-### ChatGPT:
-Rainfall happens when warm, moist air rises, cools, and condenses into water droplets in clouds. When these droplets grow heavy enough, they fall as rain. 
-### Gemini:
- Warm, moist air rises, cools, and condenses into water droplets or ice crystals, forming clouds. When these droplets or crystals become too heavy, they fall to the Earth as rain. 
+Cybersecurity Scenario:
+"A university's computer lab is hit by a ransomware attack. Write a response plan detailing how to contain the breach, recover data, and prevent future incidents."
 
-### Prompt Type 3: Tabular Format Prompting
-### Prompt A (Broad):
-"Tell me different types of energy."
-### ChatGPT:
-Kinetic Energy,Potential Energy,Thermal (Heat) Energy,Chemical Energy,Electrical Energy,Nuclear Energy,Light (Radiant) Energy,Sound Energy
-### Gemini:
-There are many types of energy, broadly categorized as kinetic (energy of motion) and potential (stored energy).   
-### Examples include:
-Kinetic: Motion, thermal (heat), radiant (light), electrical, sound.   
-Potential: Chemical, gravitational, nuclear, elastic, mechanical.   
-Energy sources can also be classified as renewable (naturally replenished, like solar, wind, and hydro) and non-renewable (finite resources, like fossil fuels and nuclear).   
-### Prompt B (Refined):
-"List 3 types of energy in a table with their definition and example."
-### ChatGPT:
-```Type of Energy	Definition	Example
-Kinetic Energy	Energy of motion.	A moving car.
-Potential Energy	Stored energy due to position or condition.	A stretched rubber band.
-Thermal Energy	Energy from the movement of particles in matter.	Boiling water.
-```
-### Gemini:
-```Energy Type	Definition	Example
-Kinetic	Energy of motion	A moving car
-Potential	Stored energy due to position	A ball held at a height
-Thermal	Energy due to temperature	Heat from a stove burner
-```
-### Prompt Type 4: Comparative Analysis Prompt
-### Prompt A (Broad):
-"Compare things."
-### ChatGPT:
-Here are some comparisons:
-### 1.	Apples vs. Oranges
-o	Apples: Crisp, sweet or tart, commonly eaten raw.
-o	Oranges: Juicy, tangy, mostly consumed as juice or fresh.
-### 2.	Cars vs. Bicycles
-o	Cars: Faster, require fuel, can travel long distances.
-o	Bicycles: Slower, eco-friendly, require physical effort.
+Creative Writing Prompt (Tech Fiction):
+"In a future where humans have direct neural interfaces with computers, a bug in the system causes people to experience each other's thoughts like open tabs in a browser."
+### chatGPT:
+### PROMPT 1
+### 1. Technical (Coding Prompt)
+Topic: Data Structures
+“Implement a priority queue using a min-heap in your preferred programming language. Include methods for insertion, deletion, and peeking at the minimum element.”
+
+### 2. Discussion/Essay Prompt
+Topic: Artificial Intelligence Ethics
+“Discuss the ethical implications of using facial recognition technology in public surveillance. Consider privacy, consent, and potential biases in your argument.”
+
+### 3. Creative Writing Prompt
+Topic: Futuristic Computing
+“In a world where quantum computers are as common as smartphones, a teenager accidentally writes a script that breaks the global banking encryption system. What happens next?”
+Prompt 1: Custom Linked List Implementation
+Task:
+Implement a singly linked list from scratch in your preferred language. Include methods for:
+
+Inserting at the head and tail
+
+Deleting a node by value
+
+Searching for a value
+
+Displaying the list
+
+🔹 Prompt 2: LRU Cache
+Task:
+Design and implement an LRU (Least Recently Used) Cache with the following operations:
+
+get(key): Return the value of the key if present, else -1
+
+put(key, value): Insert or update the value. If the cache reaches capacity, evict the least recently used item.
+
+Use an appropriate combination of hashmap and doubly linked list to achieve O(1) time complexity for both operations.
+
+🔹 Prompt 3: Balanced Brackets Checker Using Stack
+Task:
+Write a function that takes a string of brackets (()[]{}) and determines if the brackets are balanced.
+For example:
+
+"([]{})" → ✅ Balanced
+
+"([)]" → ❌ Not Balanced
+
 
 ### Gemini:
- Apples are sweet and crunchy, while oranges are citrusy and juicy. Both are fruits but offer different tastes and textures.
-### Prompt B (Refined):
-" Compare the effectiveness of rule-based systems and machine learning models in solving complex problems”
+let's dive into some data structure challenges! To get started, could you tell me what specific aspects of data structures you'd like to focus on? For example, are you interested in:
 
-### ChatGPT:
-Rule-based systems use predefined rules, making them effective for simple tasks but struggle with complexity and adaptability. They require manual updates for maintenance.
-Machine learning models, on the other hand, learn from data, handle complex problems better, and improve over time with more data. They are more adaptable and typically perform better in uncertain scenarios.
+Arrays and Lists? (Manipulation, searching, sorting)
+Linked Lists? (Traversal, insertion, deletion, different types like singly, doubly, circular)
+Stacks and Queues? (Applications, implementations)
+Trees? (Binary trees, BSTs, traversal algorithms, balancing)
+Heaps? (Priority queues, heap sort)
+Hash Tables? (Collision resolution, performance)
+Graphs? (Traversal algorithms like BFS and DFS, shortest paths, graph representations)
+### chatGPT 
+### PROMPT 2
+### Prompt 1: Bias in AI Algorithms
+“AI systems are only as unbiased as the data they are trained on. Discuss the consequences of algorithmic bias in fields like hiring, healthcare, and law enforcement. What measures can be taken to mitigate these biases?”
 
-### Gemini:
-Rule-based systems excel in well-defined problems with clear, logical rules, offering transparency and consistency. However, they struggle with complex, dynamic situations requiring adaptation and learning. Machine learning models, on the other hand, learn from data to solve intricate problems, improve with more data, and handle ambiguity, but can be less transparent and require significant data for training.
+🔹 Prompt 2: AI and Job Displacement
+“As AI continues to automate tasks across various industries, concerns about mass unemployment and job displacement grow. Analyze the ethical responsibility of governments and tech companies in managing this transition.”
+
+🔹 Prompt 3: Autonomous Weapons and AI in Warfare
+“Should AI be used to make life-or-death decisions in military contexts? Explore the moral and ethical implications of developing autonomous weapons systems.”
+
+### Gemini
+Ah, a fascinating and crucial topic! Let's delve into the ethical dimensions of Artificial Intelligence. Here's a discussion/essay prompt for you:
+
+Prompt:
+
+"As Artificial Intelligence systems become increasingly integrated into various aspects of our lives, from healthcare and criminal justice to education and entertainment, a complex web of ethical challenges emerges. Explore the most pressing ethical considerations surrounding the development and deployment of AI. In your discussion, consider issues such as bias and fairness, transparency and explainability (the 'black box' problem), accountability and responsibility, privacy and security, and the potential impact on employment and the future of work. Furthermore, analyze potential approaches and frameworks for mitigating these ethical risks and ensuring the responsible innovation of AI technologies."   
+
+Feel free to approach this prompt by:
+
+Focusing on one or two specific ethical challenges and exploring them in depth.
+Providing a broader overview of several key ethical considerations.
+Analyzing existing or proposed ethical guidelines and their effectiveness.
+Presenting your own perspective on the most critical ethical priorities in AI development.
+### chatGPT 
+### PROMPT 3
+Prompt 1: Neural Hacking
+“In 2085, computers are implanted directly into the brain. A rogue developer discovers a way to ‘jailbreak’ minds and rewrite people’s memories—starting with their own.”
+
+🔹 Prompt 2: Post-Quantum World
+“Quantum computing has rendered all traditional encryption useless overnight. A secret organization scrambles to protect the last unbreakable vault—guarded not by tech, but by a human with a perfect memory.”
+
+🔹 Prompt 3: Digital Consciousness
+“You wake up in a virtual world and realize your consciousness has been uploaded without your consent. The real you is gone, and now you must find out who did it—and why.”
+
+### GEMINI
+"The year is 2077. Humans no longer interact with traditional screens or keyboards. Instead, 'Cogni-Weave,' a neural interface technology, seamlessly integrates digital life directly with human consciousness. Imagine a world where thoughts can instantly manifest as complex simulations, where memories can be shared and experienced collectively, and where the lines between the physical and virtual have blurred.
+
+Tell a story about an individual living in this world. Your narrative should explore both the extraordinary possibilities and the unforeseen challenges presented by Cogni-Weave. Consider aspects such as:
+
+How does this technology impact human relationships and communication?
+What are the implications for personal identity and privacy?
+Are there new forms of art, entertainment, or work that have emerged?
+What are the potential societal divides or inequalities that could arise from such advanced technology?
+Does the seamless integration of mind and machine come at a cost?
+Your story can focus on a specific event, a day in the life of your character, or a broader exploration of this futuristic society. Let your imagination run wild!"
+
 
 
 # RESULT:
-### Based on the analysis of quality, accuracy, and depth, both AI models perform well, with slight differences:
-### 1.	Quality:
-Chat GPT provides more detailed explanations, while Gemini is generally more concise and focused.
-### 2.	Accuracy:
-Complex scenarios tend to be handled more accurately by ChatGPT, whereas simpler, straightforward tasks are more precisely handled by Gemini
-### 3.	Depth:
-Gemini offers deeper responses in unstructured or broad prompts, while ChatGPT is more efficient in structured, refined prompts.
-Overall, the best model depends on user preference for detail, clarity, and the complexity of the prompt. Gemini is the best choice for users seeking more depth and detailed explanations
-
-
+The prompt for the above said problem executed successfully
